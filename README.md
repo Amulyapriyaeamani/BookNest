@@ -44,6 +44,7 @@ BookNest/
 ├── index.html     # Main HTML file (UI structure & semantics)
 ├── styles.css     # CSS styling (shelf design, responsiveness)
 └── assets/        # (Optional) local images, icons, or fonts
+---
 
 ## 🛠️ Tech Stack
 
@@ -51,11 +52,14 @@ HTML5 – semantic, accessible markup
 
 CSS3 – flexbox, grid, media queries, variables
 
+---
 
 ## 📜 License
 
 This project is licensed under the MIT License.
 You are free to use, modify, and distribute it with attribution.
+
+---
 
 ## 👩‍💻 Author
 
