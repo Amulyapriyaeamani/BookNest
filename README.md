@@ -36,16 +36,6 @@ It highlights book categories, featured reads, current user reads, and recommend
   - Keyboard-accessible focus rings and review popups  
 
 ---
-
-## 📂 Project Structure
-
-```bash
-BookNest/
-├── index.html     # Main HTML file (UI structure & semantics)
-├── styles.css     # CSS styling (shelf design, responsiveness)
-└── assets/        # (Optional) local images, icons, or fonts
----
-
 ## 🛠️ Tech Stack
 
 HTML5 – semantic, accessible markup
@@ -54,14 +44,10 @@ CSS3 – flexbox, grid, media queries, variables
 
 ---
 
-## 📜 License
+## 📂 Project Structure
 
-This project is licensed under the MIT License.
-You are free to use, modify, and distribute it with attribution.
-
----
-
-## 👩‍💻 Author
-
-Amulya – Fresh graduate aspiring to be an SDE/Full-Stack/AI-ML Engineer
-
+```bash
+BookNest/
+├── index.html     # Main HTML file (UI structure & semantics)
+├── styles.css     # CSS styling (shelf design, responsiveness)
+└── assets/        # (Optional) local images, icons, or fonts
