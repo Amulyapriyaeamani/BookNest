@@ -44,73 +44,20 @@ BookNest/
 ├── index.html     # Main HTML file (UI structure & semantics)
 ├── styles.css     # CSS styling (shelf design, responsiveness)
 └── assets/        # (Optional) local images, icons, or fonts
-🚀 Getting Started
 
-You can run BookNest locally with just your browser — no build tools required.
-
-1. Clone the repository
-git clone https://github.com/your-username/booknest.git
-cd booknest
-
-2. Open the project
-
-Double-click index.html to open in your default browser, or
-
-Right-click and choose Open With → Browser.
-
-That’s it! 🎉
-
-🌐 Live Demo (Optional)
-
-If you want to host the project online:
-
-Push your repo to GitHub.
-
-Go to Settings → Pages.
-
-Under Branch, select main (or master) and /root.
-
-Save → Your site will be live at:
-https://your-username.github.io/booknest/
-
-📸 Screenshots
-
-Add screenshots here after you preview in your browser.
-
-Desktop View
-
-
-Mobile View
-
-
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 HTML5 – semantic, accessible markup
 
 CSS3 – flexbox, grid, media queries, variables
 
-(Optional) Minimal vanilla JavaScript for keyboard accessibility
 
-🏗️ Future Enhancements
-
-🔍 Search bar for books
-
-📑 Bookmarking / reading list feature
-
-🌙 Dark mode toggle
-
-📱 Progressive Web App (PWA) support
-
-📜 License
+## 📜 License
 
 This project is licensed under the MIT License.
 You are free to use, modify, and distribute it with attribution.
 
-👩‍💻 Author
+## 👩‍💻 Author
 
 Amulya – Fresh graduate aspiring to be an SDE/Full-Stack/AI-ML Engineer
 
-💼 LinkedIn
- (add your profile link)
-
-🐙 GitHub
