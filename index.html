@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookNest | Your Reading Haven</title>
+    <link rel="icon" href="assets/logo.png" type="image/png">
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="layout">
+
+        <!-- Sidebar (medium & larger) -->
+        <aside class="sidebar">
+            <div class="logo">BookNest</div>
+            <nav class="side-nav">
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#fiction">Fiction</a></li>
+                    <li><a href="#nonfiction">Non-Fiction</a></li>
+                    <li><a href="#selfhelp">Self-Help</a></li>
+                    <li><a href="#tech">Tech</a></li>
+                    <li><a href="#history">History</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Header (small devices) -->
+        <header class="header">
+            <div class="logo">BookNest</div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger"><i class="fas fa-bars"></i></label>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#fiction">Fiction</a></li>
+                    <li><a href="#nonfiction">Non-Fiction</a></li>
+                    <li><a href="#selfhelp">Self-Help</a></li>
+                    <li><a href="#tech">Tech</a></li>
+                    <li><a href="#history">History</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="content">
+
+            <!-- Hero Section -->
+            <section class="hero" id="hero">
+                <!-- Background Image -->
+                <div class="hero-bg"></div>
+                <div class="overlay"></div>
+
+                <div class="hero-content">
+                    <!-- Welcome Text -->
+                    <div class="hero-text">
+                        <!-- Animated Heading -->
+                        <h1>
+                            <span>Welcome</span>
+                            <span>to</span>
+                            <span class="highlight">BookNest</span>
+                        </h1>
+
+                        <!-- Typewriter Tagline -->
+                        <p class="typewriter">Your cozy corner to discover, save, and share the books you love.</p>
+
+                        <!-- Rotating Quotes -->
+                        <div class="rotating-quotes">
+                            <p>"A reader lives a thousand lives before he dies." — George R.R. Martin</p>
+                            <p>"So many books, so little time." — Frank Zappa</p>
+                            <p>"Reading is essential for those who seek to rise above the ordinary." — Jim Rohn</p>
+                        </div>
+
+                        <a href="#fiction" class="btn-primary">Start Exploring</a>
+                    </div>
+
+                    <!-- Current Reads Carousel -->
+                    <div class="hero-carousel animate-slidein">
+                        <h2 class="current-reads-title">✨ Your Current Reads</h2>
+                        <div class="carousel">
+                            <div class="book-cards"><img src="https://covers.openlibrary.org/b/isbn/9780735211292-L.jpg" alt="Atomic Habits">
+                                <h3>Atomic Habits</h3>
+                                <p class="author">James Clear</p>
+                                <div class="stars" data-rating="5"></div><span class="tag self-help">Self-Help</span>
+                            </div>
+                            <div class="book-cards"><img src="https://covers.openlibrary.org/b/isbn/9780061122415-L.jpg" alt="The Alchemist">
+                                <h3>The Alchemist</h3>
+                                <p class="author">Paulo Coelho</p>
+                                <div class="stars" data-rating="4.5"></div><span class="tag fiction">Fiction</span>
+                            </div>
+                            <div class="book-cards"><img src="https://covers.openlibrary.org/b/isbn/9781455586691-L.jpg" alt="Deep Work">
+                                <h3>Deep Work</h3>
+                                <p class="author">Cal Newport</p>
+                                <div class="stars" data-rating="4"></div><span class="tag non-fiction">Non-Fiction</span>
+                            </div>
+                            <div class="book-cards"><img src="https://covers.openlibrary.org/b/isbn/9780590353427.jpg" alt="Harry Potter">
+                                <h3>Harry Potter</h3>
+                                <p class="author">J.K. Rowling</p>
+                                <div class="stars" data-rating="5"></div><span class="tag fiction">Fiction</span>
+                            </div>
+                            <div class="book-cards"><img src="https://covers.openlibrary.org/b/isbn/9780099590088-L.jpg" alt="Sapiens">
+                                <h3>Sapiens</h3>
+                                <p class="author">Yuval Noah Harari</p>
+                                <div class="stars" data-rating="4.5"></div><span class="tag non-fiction">Non-Fiction</span>
+                            </div>
+                        </div>
+                        <!-- Scroll arrows -->
+                        <button class="scroll-btn left">&#10094;</button>
+                        <button class="scroll-btn right">&#10095;</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Fiction -->
+            <section class="genre fiction section-divider" id="fiction">
+                <h2>Fiction</h2>
+                <p class="genre-tagline">Step into worlds woven with imagination.</p>
+                <div class="book-row">
+                    <!-- Book 1 -->
+                    <div class="book-cards">
+                        <button class="fav-btn"><i class="fas fa-heart"></i></button>
+                        <img src="https://covers.openlibrary.org/b/isbn/9780743273565-L.jpg" alt="The Great Gatsby" loading="lazy">
+                        <h3>The Great Gatsby</h3>
+                        <p class="author">F. Scott Fitzgerald</p>
+                        <div class="stars" data-rating="5"></div>
+                        <span class="tag fiction">Fiction</span>
+                    </div>
+
+                    <!-- Book 2 -->
+                    <div class="book-cards">
+                        <button class="fav-btn"><i class="fas fa-heart"></i></button>
+                        <img src="https://covers.openlibrary.org/b/isbn/9780451524935-L.jpg" alt="1984" loading="lazy">
+                        <h3>1984</h3>
+                        <p class="author">George Orwell</p>
+                        <div class="stars" data-rating="5"></div>
+                        <span class="tag fiction">Fiction</span>
+                    </div>
+
+                    <!-- Book 3 -->
+                    <div class="book-cards">
+                        <button class="fav-btn"><i class="fas fa-heart"></i></button>
+                        <img src="https://covers.openlibrary.org/b/isbn/9780061120084-L.jpg" alt="To Kill a Mockingbird" loading="lazy">
+                        <h3>To Kill a Mockingbird</h3>
+                        <p class="author">Harper Lee</p>
+                        <div class="stars" data-rating="4.5"></div>
+                        <span class="tag fiction">Fiction</span>
+                    </div>
+
+                    <!-- Book 4 -->
+                    <div class="book-cards">
+                        <button class="fav-btn"><i class="fas fa-heart"></i></button>
+                        <img src="https://covers.openlibrary.org/b/isbn/9780547928227-L.jpg" alt="The Hobbit" loading="lazy">
+                        <h3>The Hobbit</h3>
+                        <p class="author">J.R.R. Tolkien</p>
+                        <div class="stars" data-rating="5"></div>
+                        <span class="tag fiction">Fiction</span>
+                    </div>
+
+                    <!-- Book 5 -->
+                    <div class="book-cards">
+                        <button class="fav-btn"><i class="fas fa-heart"></i></button>
+                        <img src="https://covers.openlibrary.org/b/isbn/9780439139601-L.jpg" alt="Harry Potter and the Prisoner of Azkaban" loading="lazy">
+                        <h3>Harry Potter</h3>
+                        <p class="author">J.K. Rowling</p>
+                        <div class="stars" data-rating="5"></div>
+                        <span class="tag fiction">Fiction</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Non-Fiction -->
+            <section class="genre nonfiction section-divider" id="nonfiction">
+                <h2>Non-Fiction</h2>
+                <p class="genre-tagline">Explore truths that shape our reality.</p>
+                <div class="book-row">
+                    <!-- Book 1 -->
+                    <div class="book-cards">
+                        <button class="fav-btn"><i class="fas fa-heart"></i></button>
+                        <img src="https://covers.openlibrary.org/b/isbn/9780099590088-L.jpg" alt="Sapiens" loading="lazy">
+                        <h3>Sapiens: A Brief History of Humankind</h3>
+                        <p class="author">Yuval Noah Harari</p>
+                        <div class="stars" data-rating="4.5"></div>
+                        <span class="tag non-fiction">Non-Fiction</span>
+                    </div>
+
+                    <!-- Book 2 -->
+                    <div class="book-cards">
+                        <button class="fav-btn"><i class="fas fa-heart"></i></button>
+                        <img src="https://covers.openlibrary.org/b/isbn/9780316346627-L.jpg" alt="The Tipping Point" loading="lazy">
+                        <h3>The Tipping Point</h3>
+                        <p class="author">Malcolm Gladwell</p>
+                        <div class="stars" data-rating="4"></div>
+                        <span class="tag non-fiction">Non-Fiction</span>
+                    </div>
+
+                    <!-- Book 3 -->
+                    <div class="book-cards">
+                        <button class="fav-btn"><i class="fas fa-heart"></i></button>
+                        <img src="https://covers.openlibrary.org/b/isbn/9780393317558-L.jpg" alt="Guns, Germs, and Steel" loading="lazy">
+                        <h3>Guns, Germs, and Steel</h3>
+                        <p class="author">Jared Diamond</p>
+                        <div class="stars" data-rating="4.5"></div>
+                        <span class="tag non-fiction">Non-Fiction</span>
+                    </div>
+
+                    <!-- Book 4 -->
+                    <div class="book-cards">
+                        <button class="fav-btn"><i class="fas fa-heart"></i></button>
+                        <img src="https://covers.openlibrary.org/b/isbn/9780399590504-L.jpg" alt="Educated" loading="lazy">
+                        <h3>Educated</h3>
+                        <p class="author">Tara Westover</p>
+                        <div class="stars" data-rating="5"></div>
+                        <span class="tag non-fiction">Non-Fiction</span>
+                    </div>
+
+                    <!-- Book 5 -->
+                    <div class="book-cards">
+                        <button class="fav-btn"><i class="fas fa-heart"></i></button>
+                        <img src="https://covers.openlibrary.org/b/isbn/9781476728759-L.jpg" alt="The Wright Brothers" loading="lazy">
+                        <h3>The Wright Brothers</h3>
+                        <p class="author">David McCullough</p>
+                        <div class="stars" data-rating="4"></div>
+                        <span class="tag non-fiction">Non-Fiction</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Self-Help -->
+            <section class="genre selfhelp section-divider" id="selfhelp">
+                <h2>Self-Help</h2>
+                <p class="genre-tagline">Fuel growth, habits, and a better you.</p>
+                <div class="book-row">
+                    <!-- Book 1 -->
+                    <div class="book-cards">
+                        <button class="fav-btn"><i class="fas fa-heart"></i></button>
+                        <img src="https://covers.openlibrary.org/b/isbn/9780735211292-L.jpg" alt="Atomic Habits" loading="lazy">
+                        <h3>Atomic Habits</h3>
+                        <p class="author">James Clear</p>
+                        <div class="stars" data-rating="5"></div>
+                        <span class="tag self-help">Self-Help</span>
+                    </div>
+
+                    <!-- Book 2 -->
+                    <div class="book-cards">
+                        <button class="fav-btn"><i class="fas fa-heart"></i></button>
+                        <img src="https://covers.openlibrary.org/b/isbn/9781577314806-L.jpg" alt="The Power of Now" loading="lazy">
+                        <h3>The Power of Now</h3>
+                        <p class="author">Eckhart Tolle</p>
+                        <div class="stars" data-rating="4.5"></div>
+                        <span class="tag self-help">Self-Help</span>
+                    </div>
+
+                    <!-- Book 3 -->
+                    <div class="book-cards">
+                        <button class="fav-btn"><i class="fas fa-heart"></i></button>
+                        <img src="https://covers.openlibrary.org/b/isbn/9780743269513-L.jpg" alt="The 7 Habits of Highly Effective People" loading="lazy">
+                        <h3>The 7 Habits of Highly Effective People</h3>
+                        <p class="author">Stephen R. Covey</p>
+                        <div class="stars" data-rating="5"></div>
+                        <span class="tag self-help">Self-Help</span>
+                    </div>
+
+                    <!-- Book 4 -->
+                    <div class="book-cards">
+                        <button class="fav-btn"><i class="fas fa-heart"></i></button>
+                        <img src="https://covers.openlibrary.org/b/isbn/9780062457714-L.jpg" alt="The Subtle Art of Not Giving a F*ck" loading="lazy">
+                        <h3>The Subtle Art of Not Giving a F*ck</h3>
+                        <p class="author">Mark Manson</p>
+                        <div class="stars" data-rating="4"></div>
+                        <span class="tag self-help">Self-Help</span>
+                    </div>
+
+                    <!-- Book 5 -->
+                    <div class="book-cards">
+                        <button class="fav-btn"><i class="fas fa-heart"></i></button>
+                        <img src="https://covers.openlibrary.org/b/isbn/9781455586691-L.jpg" alt="Deep Work" loading="lazy">
+                        <h3>Deep Work</h3>
+                        <p class="author">Cal Newport</p>
+                        <div class="stars" data-rating="4.5"></div>
+                        <span class="tag self-help">Self-Help</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tech -->
+            <section class="genre tech section-divider" id="tech">
+                <h2>Tech</h2>
+                <p class="genre-tagline">Decode the future, one page at a time.</p>
+                <div class="book-row">
+                    <div class="book-cards">
+                        <button class="fav-btn"><i class="fas fa-heart"></i></button>
+                        <img src="https://covers.openlibrary.org/b/isbn/9780201633610-L.jpg" alt="Design Patterns" loading="lazy">
+                        <h3>Design Patterns</h3>
+                        <p class="author">Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides</p>
+                        <div class="stars" data-rating="5"></div>
+                        <span class="tag tech">Tech</span>
+                    </div>
+
+                    <!-- Book 2 -->
+                    <div class="book-cards">
+                        <button class="fav-btn"><i class="fas fa-heart"></i></button>
+                        <img src="https://covers.openlibrary.org/b/isbn/9780131103627-L.jpg" alt="The C Programming Language" loading="lazy">
+                        <h3>The C Programming Language</h3>
+                        <p class="author">Brian W. Kernighan, Dennis M. Ritchie</p>
+                        <div class="stars" data-rating="5"></div>
+                        <span class="tag tech">Tech</span>
+                    </div>
+
+                    <!-- Book 3 -->
+                    <div class="book-cards">
+                        <button class="fav-btn"><i class="fas fa-heart"></i></button>
+                        <img src="https://covers.openlibrary.org/b/isbn/9780262033848-L.jpg" alt="Introduction to Algorithms" loading="lazy">
+                        <h3>Introduction to Algorithms</h3>
+                        <p class="author">Thomas H. Cormen et al.</p>
+                        <div class="stars" data-rating="5"></div>
+                        <span class="tag tech">Tech</span>
+                    </div>
+
+                    <!-- Book 4 -->
+                    <div class="book-cards">
+                        <button class="fav-btn"><i class="fas fa-heart"></i></button>
+                        <img src="https://covers.openlibrary.org/b/isbn/9780134685991-L.jpg" alt="Effective Java" loading="lazy">
+                        <h3>Effective Java</h3>
+                        <p class="author">Joshua Bloch</p>
+                        <div class="stars" data-rating="4.5"></div>
+                        <span class="tag tech">Tech</span>
+                    </div>
+
+                    <!-- Book 5 -->
+                    <div class="book-cards">
+                        <button class="fav-btn"><i class="fas fa-heart"></i></button>
+                        <img src="https://covers.openlibrary.org/b/isbn/9781491957660-L.jpg" alt="Python for Data Analysis" loading="lazy">
+                        <h3>Python for Data Analysis</h3>
+                        <p class="author">Wes McKinney</p>
+                        <div class="stars" data-rating="4.5"></div>
+                        <span class="tag tech">Tech</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- History -->
+            <section class="genre history section-divider" id="history">
+                <h2>History</h2>
+                <p class="genre-tagline">Walk through the echoes of time.</p>
+                <div class="book-row">
+                    <div class="book-cards">
+                        <button class="fav-btn"><i class="fas fa-heart"></i></button>
+                        <img src="https://covers.openlibrary.org/b/isbn/9780316023740-L.jpg" alt="The Second World War" loading="lazy">
+                        <h3>The Second World War</h3>
+                        <p class="author">Antony Beevor</p>
+                        <div class="stars" data-rating="5"></div>
+                        <span class="tag history">History</span>
+                    </div>
+
+                    <!-- Book 2 -->
+                    <div class="book-cards">
+                        <button class="fav-btn"><i class="fas fa-heart"></i></button>
+                        <img src="https://covers.openlibrary.org/b/isbn/9780393317558-L.jpg" alt="Guns, Germs, and Steel" loading="lazy">
+                        <h3>Guns, Germs, and Steel</h3>
+                        <p class="author">Jared Diamond</p>
+                        <div class="stars" data-rating="4.5"></div>
+                        <span class="tag history">History</span>
+                    </div>
+
+                    <!-- Book 3 -->
+                    <div class="book-cards">
+                        <button class="fav-btn"><i class="fas fa-heart"></i></button>
+                        <img src="https://covers.openlibrary.org/b/isbn/9780393059748-L.jpg" alt="The History of the Ancient World" loading="lazy">
+                        <h3>The History of the Ancient World</h3>
+                        <p class="author">Susan Wise Bauer</p>
+                        <div class="stars" data-rating="4"></div>
+                        <span class="tag history">History</span>
+                    </div>
+
+                    <!-- Book 4 -->
+                    <div class="book-cards">
+                        <button class="fav-btn"><i class="fas fa-heart"></i></button>
+                        <img src="https://covers.openlibrary.org/b/isbn/9780743270755-L.jpg" alt="Team of Rivals" loading="lazy">
+                        <h3>Team of Rivals</h3>
+                        <p class="author">Doris Kearns Goodwin</p>
+                        <div class="stars" data-rating="5"></div>
+                        <span class="tag history">History</span>
+                    </div>
+
+                    <!-- Book 5 -->
+                    <div class="book-cards">
+                        <button class="fav-btn"><i class="fas fa-heart"></i></button>
+                        <img src="https://covers.openlibrary.org/b/isbn/9780143037750-L.jpg" alt="Postwar: A History of Europe Since 1945" loading="lazy">
+                        <h3>Postwar: A History of Europe Since 1945</h3>
+                        <p class="author">Tony Judt</p>
+                        <div class="stars" data-rating="4.5"></div>
+                        <span class="tag history">History</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Recommended Reads -->
+            <!-- Recommended Reads -->
+            <section class="recommended-reads section-divider" id="recommended">
+                <h2>Recommended Reads</h2>
+                <p class="section-tagline">Handpicked gems you shouldn’t miss!</p>
+
+                <div class="recommended-row">
+                    <!-- Book 1 -->
+                    <div class="book-cards special">
+                        <button class="fav-btn"><i class="fas fa-heart"></i></button>
+                        <img src="https://covers.openlibrary.org/b/isbn/9780553296983-L.jpg" alt="The Diary of a Young Girl" loading="lazy">
+                        <h3>The Diary of a Young Girl</h3>
+                        <p class="author">Anne Frank</p>
+                        <div class="stars" data-rating="4.5"></div>
+                        <span class="tag non-fiction">Non-Fiction</span>
+                        <span class="badge">Staff Pick</span>
+                        <div class="review-snippet">
+                            “A hauntingly human testament of hope, resilience, and the unbreakable spirit of youth.” <span>— Meera</span>
+                        </div>
+                    </div>
+
+                    <!-- Book 2 -->
+                    <div class="book-cards special">
+                        <button class="fav-btn"><i class="fas fa-heart"></i></button>
+                        <img src="https://covers.openlibrary.org/b/isbn/9780743273565-L.jpg" alt="The Great Gatsby" loading="lazy">
+                        <h3>The Great Gatsby</h3>
+                        <p class="author">F. Scott Fitzgerald</p>
+                        <div class="stars" data-rating="5"></div>
+                        <span class="tag fiction">Fiction</span>
+                        <span class="badge">Editor’s Choice</span>
+                        <div class="review-snippet">
+                            “A dazzling tragedy of love and ambition beneath the shimmering illusion of the American Dream.” <span>— Arjun</span>
+                        </div>
+                    </div>
+                    <!-- Book 3 -->
+                    <div class="book-cards special">
+                        <button class="fav-btn"><i class="fas fa-heart"></i></button>
+                        <img src="https://covers.openlibrary.org/b/isbn/9780345472328-L.jpg" alt="Man’s Search for Meaning" loading="lazy">
+                        <h3>Man’s Search for Meaning</h3>
+                        <p class="author">Viktor E. Frankl</p>
+                        <div class="stars" data-rating="5"></div>
+                        <span class="tag self-help">Self-Help</span>
+                        <span class="badge">Classic Pick</span>
+                        <div class="review-snippet">
+                            “A soul-stirring reflection on suffering, purpose, and the extraordinary strength of the human will.” <span>— Naina</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-left">BookNest</div>
+        <div class="footer-center">
+            <p> © 2025 BookNest. Built with ❤️ for readers worldwide. </p>
+        </div>
+        <div class="footer-right">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <!-- JS for Scroll Buttons -->
+    <script>
+        document.querySelectorAll('.hero-carousel').forEach(carousel => {
+            const container = carousel.querySelector('.carousel');
+            const leftBtn = carousel.querySelector('.scroll-btn.left');
+            const rightBtn = carousel.querySelector('.scroll-btn.right');
+            if (leftBtn && rightBtn) {
+                leftBtn.addEventListener('click', () => {
+                    container.scrollBy({
+                        left: -220,
+                        behavior: 'smooth'
+                    });
+                });
+                rightBtn.addEventListener('click', () => {
+                    container.scrollBy({
+                        left: 220,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+        });
+        document.querySelectorAll('.fav-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                btn.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
