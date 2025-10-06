@@ -195,7 +195,6 @@ h3 {
 }
 
 /* ========== HERO SECTION ========== */
-/* ========== HERO SECTION ========== */
 .hero {
     position: relative;
     color: #fff;
@@ -832,20 +831,15 @@ h3 {
 }
 
 /* ========== SECTIONS & FOOTER ========== */
-/* ---------- Genre backgrounds (subtle gradients + grain) ---------- */
 .genre {
     position: relative;
     padding: 1.5rem 1rem;
     border-radius: 12px;
     margin-bottom: 2.5rem;
     overflow: hidden;
-    /* content above pseudo elements */
-    /* ✨ Soft shadow */
     box-shadow:
         0 3px 8px rgba(0, 0, 0, 0.05),
-        /* main soft shadow */
         0 1px 2px rgba(0, 0, 0, 0.03);
-    /* light detail shadow */
 
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
@@ -862,7 +856,6 @@ h3 {
     z-index: 1;
 }
 
-/* background gradient layer (via ::before) */
 .genre::before {
     content: "";
     position: absolute;
@@ -870,11 +863,9 @@ h3 {
     z-index: 0;
     pointer-events: none;
     box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.04);
-    /* default fallback */
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95));
 }
 
-/* tactile grain layer (very subtle) */
 .genre::after {
     content: "";
     position: absolute;
@@ -886,7 +877,6 @@ h3 {
     opacity: var(--genre-grain-opacity);
 }
 
-/* small top->bottom shading for depth */
 .genre .genre-overlay {
     position: absolute;
     inset: 0;
@@ -916,7 +906,6 @@ h3 {
     background: linear-gradient(135deg, var(--history-bg), rgba(255, 255, 255, 0.88));
 }
 
-/* small tweak: reduce visual noise on tiny screens */
 @media (max-width: 767px) {
     .genre {
         padding: 1.2rem 0.8rem;
@@ -926,8 +915,6 @@ h3 {
     .genre::after {
         display: none;
     }
-
-    /* hide grain on small to keep it clean */
     .genre .genre-overlay {
         display: none;
     }
